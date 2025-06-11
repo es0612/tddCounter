@@ -15,5 +15,11 @@ struct TddCounterTests {
         let counter = Counter()
         #expect(counter.value == 0)
     }
+    
+    @Test func counterCanBeIncremented() async throws {
+        let counter = Counter()
+        counter.increment()
+        #expect(counter.value == 1)
+    }
 
 }
