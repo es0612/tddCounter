@@ -14,4 +14,8 @@ class Counter {
     func increment() {
         value += 1
     }
+    
+    func decrement() {
+        value -= 1
+    }
 }
