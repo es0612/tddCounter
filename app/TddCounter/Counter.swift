@@ -8,8 +8,8 @@
 
 import Foundation
 
-class Counter {
-    var value: Int = 0
+class Counter: ObservableObject {
+    @Published var value: Int = 0
     
     func increment() {
         value += 1
